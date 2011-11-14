@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @resource.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @resource.email %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @resource.active %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @resource.company.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
